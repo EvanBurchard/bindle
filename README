@@ -1,0 +1,4 @@
+1.  Rename databases in database.yml to be <your_appname>_test, <your_appname>_development, and <your_appname>_production
+2. Change session_store.rb to have
+:key         => "_<your_appname>_session",
+:secret      => Regenerate this so that it's not shared between you and the other hobos
